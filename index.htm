@@ -66,6 +66,8 @@ tr:nth-child(even) {
 <h2>Ngawang Lodroe Nitsang</h2>
 <p>Click on the buttons inside the tabbed menu:</p>
 
+
+
 <div class="tab">
 
   <button class="tablinks" onclick="openNga(event, 'profile')">PROFILE </button>
@@ -75,6 +77,8 @@ tr:nth-child(even) {
   <button class="tablinks" onclick="openNga(event, 'contact')">CONTACT</button>
 
 </div>
+
+
 
 
 <div id="profile" class="tabcontent">
@@ -212,18 +216,24 @@ tr:nth-child(even) {
 </div>
 <script>
 function openNga(evt, conName) {
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
+  const tabcontent = document.getElementsByClassName("tabcontent");
+  const tablinks = document.getElementsByClassName("tablinks");
+
+  for (let i = 0; i < tabcontent.length; i++) {
     tabcontent[i].style.display = "none";
   }
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
+
+  for (let i = 0; i < tablinks.length; i++) {
+    tablinks[i].classList.remove("active");
   }
+
   document.getElementById(conName).style.display = "block";
-  evt.currentTarget.className += " active";
+  evt.currentTarget.classList.add("active");
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+  document.querySelector(".tablinks").click();
+});
 </script>
    
 </body>
