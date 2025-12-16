@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial;}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+</style>
+
+
+</head>
+<body>
+
+<h2>Ngawang Lodroe Nitsang</h2>
+<p>Click on the buttons inside the tabbed menu:</p>
+
+<div class="tab">
+
+  <button class="tablinks" onclick="openNga(event, 'profile')">PROFILE </button>
+  <button class="tablinks" onclick="openNga(event, 'prof')">PROFESSIONAL EXPERIENCE</button>
+  <button class="tablinks" onclick="openNga(event, 'formation')">FORMATION</button>
+   <button class="tablinks" onclick="openNga(event, 'language')">LANGUAGE</button>
+  <button class="tablinks" onclick="openNga(event, 'contact')">CONTACT</button>
+
+</div>
+
+
+<div id="profile" class="tabcontent">
+  <h3>Profile</h3>
+    <p>
+<table style="width:60%">
+
+  <tr>
+    <td>Motivated and dedicated individual with basic computer knowledge and a strong desire to build a career in the IT field. I consider myself adaptable, reliable, and a quick learner, with a strong commitment to continuous self-improvement. At present, I am actively developing technical skills through self-learning and guidance from a friend working in the IT support field. Seeking an opportunity to gain hands-on experience and grow within a supportive and dynamic IT environment..</td>
+    
+  </tr>
+  
+</table>
+
+
+	
+</p> 
+</div>
+<div id="prof" class="tabcontent">
+  <h3>Professional Experience </h3>
+  <p>
+<table style="width:60%">
+
+  <tr>
+    <td>2025</td>
+    <td>IT support Intern, Mindmaze</td>
+    <td>Lausanne</td>
+  </tr>
+  <tr>
+    <td>2023 – 2025</td>
+    <td>Personal Care Assistant</td>
+    <td>Mindmaze,Lausanne</td>
+  </tr>
+  <tr>
+    <td>2021 - 2023</td>
+    <td>Delivery Driver</td>
+    <td>Sushishop,Lausanne</td>
+  </tr>
+  <tr>
+    <td>2015 - 2018</td>
+    <td>Trainee in Care and Support</td>
+    <td>Englischgruss-Leben im Alters<br>Brig-Glis,Wallis</p></td>
+  </tr>
+<tr>
+    <td>2013 - 2014</td>
+    <td>Night Watchman – Asylum Reception Centre</td>
+    <td>Visp, Wallis</p></td>
+  </tr>
+</table>
+	
+</p> 
+</div>
+
+<div id="formation" class="tabcontent">
+  <h3>Formation</h3>
+    <p>
+<table style="width:60%">
+
+  <tr>
+    <td>2024</td>
+    <td>	Google – Technical Support Fundamentals (Coursera)</td>
+    <td>online</td>
+  </tr>
+  <tr>
+    <td>2019</td>
+    <td>French Course B1 </td>
+    <td>VOXEA,Lausanne</td>
+  </tr>
+  <tr>
+    <td>2018 - 2019</td>
+    <td>French Course A1 - INTERLANGUES Janin SA</td>
+    <td>Lausanne</td>
+  </tr>
+  <tr>
+    <td>2015 - 2018</td>
+    <td>AGS Certificate in Health Care Assistance</td>
+    <td>Englischgruss-Leben im Alters<br>Brig-Glis,Wallis</p></td>
+  </tr>
+<tr>
+    <td>2013 - 2014</td>
+    <td>German course A2 / B1 - Volkshochschule Oberwallis</td>
+    <td>Brig, Wallis</p></td>
+  </tr>
+<tr>
+    <td>2014</td>
+    <td>German course A1</td>
+    <td>Raron, Wallis</p></td>
+  </tr>
+
+</table>
+
+
+	
+</p> 
+</div>
+<div id="language" class="tabcontent">
+  <h3>Language</h3>
+    <p>
+<table style="width:60%">
+
+  <tr>
+    <td>	Tibetan  </td>
+    <td>Mother tougue</td>
+  </tr>
+  <tr>
+    <td>English  </td>
+    <td>B2</td>
+  </tr>
+  <tr>
+       <td>French</td>
+    <td>B1</td>
+  </tr>
+  <tr>
+    <td>German</td>
+    <td>B1</td>
+  </tr>
+</table>
+	
+</p> 
+</div>
+
+<div id="contact" class="tabcontent">
+  <h3>Contact</h3>
+    <p>
+<table style="width:60%">
+
+  <tr>
+    <td> Route de la Croix Blanche 33 <br> 1066 Epalinges <p> Email : <a href="mailto:ngawangrapse@gmail.com"> ngawangrapse@gmail.com </a> <p> Mobile : +41 786936122 </td>
+
+    
+  </tr>
+</table>
+	
+</p> 
+</div>
+<script>
+function openNga(evt, conName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(conName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+   
+</body>
+</html> 
